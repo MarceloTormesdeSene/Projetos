@@ -4,12 +4,30 @@
         <meta charset="utf-8">
         <title>Documento</title>
         <style>
-            body {margin: 0px;}
+            body {
+                animation: bg 10s infinite linear;
+            }
+            @keyframes bg{
+                0%{
+                    background: #fa0000;
+                }
+                25%{
+                    background: #8731e9;
+                }
+                50%{
+                    background: #330000;
+                }
+                75%{
+                    background: #310047;
+                }
+                100%{
+                    background: #ffffff;
+                }
+            }
  
             .container {
                 width: 100vw;
                 height: 100vh;
-                background: #000000;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -53,11 +71,6 @@
                 height: 5px;
                 border: none;
                 border-radius: 2px;
-            }
-
-            a:hover <!-- pseudo-classe -->{
-                background: rgb(29, 0, 75);
-                color: aliceblue;
             }
             
             /*COLORS*/
@@ -114,43 +127,7 @@
                     <hr class="colorSeven"/>
                 </di>
             </div>
-            <div class="box a:hover">
-                <div class="boxContent colorThree">
-                  <h1 class="colorTextTwo">1</h1>
-                  <p class="colorTextTwo">Opção de acordo com que deseja</p>
-                </div>
-                <div class="boxBottom colorFour">
-                   <hr class="colorThree" />
-                </div>
-            </div>
-          
-            <div class="box a:hover">
-                <div class="boxContent colorOne">
-                  <h1 class="colorTextOne">2</h1>
-                  <p class="colorTextOne">Opção de acordo com que deseja</p>
-                </div>
-                <div class="boxBottom colorTwo">
-                   <hr class="colorOne" />
-                </div>
-            </div>
-            <div class="box a:hover">
-                <div class="boxContent colorFive">
-                    <h1 class="colorTextThree">3</h1>
-                    <p class="colorTextThree">Opção de acordo com que deseja</p>
-                </div>
-                <div class="boxBottom colorSix">
-                    <hr class="colorFive" />
-                </div>
-            </div>
-            <div class="box a:hover">
-                <div class="boxContent colorSeven">
-                    <h1 class="colorTextFour">4</h1>
-                    <p class="colorTextFour">Opção de acordo com que deseja</p>
-                </div>
-                <di class="boxBottom colorEight">
-                    <hr class="colorSeven"/>
-                </di>
-            </div>
+           
         </div>
         
     </body>

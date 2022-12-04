@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>icones</title>
+        <meta charset="utf-8">
+        <style>
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                max-width: 1200px;
+                text-align: center;
+            }
+
+            .container .bnt {
+                display: inline-block;
+                width: 90px;
+                height: 90px;
+                background: rgb(255, 8, 8);
+                box-shadow: 0 5px 15px -5px #aaa;
+                margin: 10px;
+                border-radius: 30%;
+                overflow: hidden;
+                position: relative;
+                color: #42d2ff;
+            }
+            .container .bnt i {
+                position: relative;
+                z-index: 4;
+                line-height: 90px;
+                font-size: 26px;
+                transition: 0.3;
+            }
+            .container .bnt::before {
+                content: **;
+                position:absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a href="https://www.facebook.com/" class="bnt">
+                <i class="fab fa-facebook-f">facebook</i>
+            </a>
+            <a href="https://twitter.com/" class="bnt">
+                <i class="fab fa-twitter">twitter</i>
+            </a>
+            <a href="https://www.google.com/" class="bnt">
+                <i class="fab fa-google">google</i>
+            </a>
+            <a href="https://www.instagram.com/" class="bnt">
+                <i class="fab fa-instagram">instagram</i>
+            </a>
+            <a href="https://www.youtube.com/" class="bnt">
+                <i class="fab fa-youtube">youtube</i>
+            </a>
+            <a href="https://www.twitch.tv/" class="bnt">
+                <i class="fab fa-twitter">twitch</i>
+            </a>
+        </div>
+    </body>
+</html>
